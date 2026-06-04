@@ -13,7 +13,7 @@ The gateway processes client entries through modular configurations, isolating a
 ## Project Structure
 
 
-**iron_gate/**
+iron_gate/
 ├── main.py
 ├── utils/
 │   └── load_balancer.py
