@@ -12,9 +12,11 @@ The gateway processes client entries through modular configurations, isolating a
 
 ## Project Structure
 
-
+```text
 iron_gate/
 ├── main.py
+├── app.py
+├── README.md
 ├── utils/
 │   └── load_balancer.py
 ├── storage/
@@ -22,30 +24,22 @@ iron_gate/
 ├── middleware/
 │   ├── auth_guard.py
 │   └── rate_limiter.py
-├── router/
-│   └── proxy_engine.py
-├── app.py
-└── README.md
+└── router/
+    └── proxy_engine.py
 
-1) Setup and Installation
+Setup and Installation
 
-Install the required dependencies:
+1) Install the required dependencies:
 pip install fastapi uvicorn httpx streamlit pandas
 
-2) Start the core API Gateway server application using Uvicorn: 
+2) Start the core API Gateway server application using Uvicorn:
 uvicorn main:app --reload
 
 3) Launch the live visual tracking dashboard interface using Streamlit:
 streamlit run app.py
 
-## Interactive Module Layout
+Interactive Module Layout:
 
-## ○ System Configuration: Handles status verifications and API registration key generations (/admin/generate).**
+System Configuration: Handles status verifications and API registration key generations (/admin/generate).
 
-## ○ Flexible Input Testing Mode: Dynamic route processing matching specific entries without external network dependencies.
-
-
-
-
-
-
+Flexible Input Testing Mode: Dynamic route processing matching specific entries without external network dependencies.
